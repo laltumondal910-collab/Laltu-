@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Periodic Table of Elements</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Periodic Table of Elements</h1>
+        <p class="subtitle">Explore all 118 elements with their properties</p>
+        
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search element by name, symbol, or atomic number...">
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="nonmetal">Nonmetal</option>
+                <option value="noble-gas">Noble Gas</option>
+                <option value="alkali-metal">Alkali Metal</option>
+                <option value="alkaline-earth-metal">Alkaline Earth Metal</option>
+                <option value="metalloid">Metalloid</option>
+                <option value="halogen">Halogen</option>
+                <option value="transition-metal">Transition Metal</option>
+                <option value="lanthanide">Lanthanide</option>
+                <option value="actinide">Actinide</option>
+                <option value="post-transition-metal">Post-transition Metal</option>
+            </select>
+        </div>
+
+        <div class="periodic-table" id="periodicTable"></div>
+
+        <div class="legend">
+            <div class="legend-item"><span class="legend-box nonmetal"></span> Nonmetal</div>
+            <div class="legend-item"><span class="legend-box noble-gas"></span> Noble Gas</div>
+            <div class="legend-item"><span class="legend-box alkali-metal"></span> Alkali Metal</div>
+            <div class="legend-item"><span class="legend-box alkaline-earth-metal"></span> Alkaline Earth Metal</div>
+            <div class="legend-item"><span class="legend-box metalloid"></span> Metalloid</div>
+            <div class="legend-item"><span class="legend-box halogen"></span> Halogen</div>
+            <div class="legend-item"><span class="legend-box transition-metal"></span> Transition Metal</div>
+            <div class="legend-item"><span class="legend-box lanthanide"></span> Lanthanide</div>
+            <div class="legend-item"><span class="legend-box actinide"></span> Actinide</div>
+            <div class="legend-item"><span class="legend-box post-transition-metal"></span> Post-transition Metal</div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="elementDetails"></div>
+        </div>
+    </div>
+
+    <script src="elements.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
